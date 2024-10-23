@@ -8,19 +8,16 @@
 .app-bottom .controls {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    order: 1;
 }
 
 .app-bottom {
     display: flex;
-    justify-content: center;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .app-bottom .current{
     display: flex;
-    order: 0;
+    flex-grow: 1;
 }
 
 /* J'ai passé le time code sur le côté droit */
@@ -35,20 +32,22 @@
     justify-content: space-between;
 }
 
-/* J'ai trouvé comment passer la div app-content en haut et à côté de la barre de nav. */
+
+/* J'ai trouvé comment passer la div app-content en haut et à côté de la barre de nav. Grâce aux flex-grow j'ai pu retirer le jaune. */
 .app-top {
     display: flex;
-    flex-direction: column;
+    flex-grow: 0;
 }
 
-.app-wrapper{
-    display: flex;
-    flex-direction: column;
+.app-top .app-content{
+    flex-grow: 1;
 }
 
-/* J'ai placé les éléments de la nav d'une façàn qu'ils remplissent entièrement celle-ci.*/
-.app-wrapper .app-nav {
+/* J'ai placé les éléments de la nav d'une façon qu'ils remplissent entièrement celle-ci.*/
+.app-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
 }
+
