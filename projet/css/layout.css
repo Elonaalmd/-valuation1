@@ -8,11 +8,15 @@
 .app-bottom .controls {
     display: flex;
     justify-content: space-around;
+    align-content: baseline;
+
+
 }
 
 .app-bottom {
     display: flex;
     align-items: flex-end;
+    flex-wrap: nowrap;
 }
 
 .app-bottom .current{
