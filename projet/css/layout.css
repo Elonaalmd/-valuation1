@@ -20,6 +20,9 @@
     flex-grow: 1;
 }
 
+.app-wrapper .app-bottom{
+    flex-grow: 1;
+}
 /* J'ai passé le time code sur le côté droit */
 .track-item p+p {
     display: flex;
@@ -32,6 +35,9 @@
     justify-content: space-between;
 }
 
+.app-wrapper .app-content .track-item{
+    flex-grow: 1;
+}
 
 /* J'ai trouvé comment passer la div app-content en haut et à côté de la barre de nav. Grâce aux flex-grow j'ai pu retirer le jaune. */
 .app-top {
@@ -51,3 +57,12 @@
     align-items: flex-start;
 }
 
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+.app-wrapper .app-top{
+    flex-grow: 1;
+}
