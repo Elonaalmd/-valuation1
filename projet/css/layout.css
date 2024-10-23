@@ -1,31 +1,43 @@
 /*J'ai mis à côté de l'image le titre et les informations */
 .album {
-    display:flex ;
+    display: flex;
     align-items: center;
 }
 
 /* J'ai commencé par centrer correctement les contrôles*/
-.app-bottom .controls{
+.app-bottom .controls {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.app-bottom{
+.app-bottom {
     display: flex;
     justify-content: center;
     justify-content: flex-end;
-    
+
 }
 
 /* J'ai passé le time code sur le côté droit */
-.track-item p + p{
+.track-item p+p {
     display: flex;
     justify-content: flex-end;
 }
 
-/* J'ai mis le time code et les titres sur la même ligne */ 
-.track-item{
+/* J'ai mis le time code et les titres sur la même ligne */
+.track-item {
     display: flex;
     justify-content: space-between;
+}
+
+/* J'ai trouvé comment passer la div app-content en haut et à côté de la barre de nav. */
+.app-top {
+    display: flex;
+}
+
+/* J'ai placé les éléments de la nav d'une façàn qu'ils remplissent entièrement celle-ci.*/
+.app-wrapper .app-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
