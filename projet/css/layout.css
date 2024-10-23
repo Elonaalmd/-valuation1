@@ -57,12 +57,14 @@
     align-items: flex-start;
 }
 
+/* Ici, j'ai utilisé flex-grow afin de cacher app wrapper */
 .app-wrapper{
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
 
+/* Ceci me sert à avoir la barre jaune entre le track-item et le app.bottom*/
 .app-wrapper .app-top{
     flex-grow: 1;
 }
