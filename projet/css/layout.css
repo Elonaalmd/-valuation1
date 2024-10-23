@@ -1,0 +1,25 @@
+/*J'ai mis à côté de l'image le titre et les informations */
+.album {
+    display:flex ;
+    align-items: center;
+}
+
+/* J'ai commencé par centrer correctement les contrôles*/
+.app-bottom .controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-bottom{
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+    
+}
+
+/* J'ai passé le time code sur le côté droit */
+.track-item p + p{
+    display: flex;
+    justify-content: flex-end;
+}
