@@ -23,3 +23,9 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/* J'ai mis le time code et les titres sur la même ligne */ 
+.track-item{
+    display: flex;
+    justify-content: space-between;
+}
