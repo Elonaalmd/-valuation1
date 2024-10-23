@@ -9,13 +9,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    order: 1;
 }
 
 .app-bottom {
     display: flex;
     justify-content: center;
     justify-content: flex-end;
+}
 
+.app-bottom .current{
+    display: flex;
+    order: 0;
 }
 
 /* J'ai passé le time code sur le côté droit */
@@ -33,6 +38,12 @@
 /* J'ai trouvé comment passer la div app-content en haut et à côté de la barre de nav. */
 .app-top {
     display: flex;
+    flex-direction: column;
+}
+
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 /* J'ai placé les éléments de la nav d'une façàn qu'ils remplissent entièrement celle-ci.*/
